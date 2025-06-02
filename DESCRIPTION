@@ -1,0 +1,26 @@
+Package: SLOWhale
+Title: Shortcut for running Whale Song apps locally.
+Version: 0.0.0.9000
+Authors@R: 
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
+Description: Shortcut for running Whale Song apps locally.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    data.table,
+    dplyr,
+    ggplot2,
+    here,
+    phonTools,
+    seewave,
+    shiny,
+    shinyjs,
+    signal,
+    tuneR
+Depends: 
+    R (>= 3.5),
+    tidymodels,
+    tidyverse
+LazyData: true
