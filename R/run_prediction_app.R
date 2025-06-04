@@ -1,6 +1,7 @@
 #' Runs app to predict times of Grey Whale calls
 #'
 #' @import shiny
+#' @importFrom data.table fread
 #' @export
 
 run_prediction_app <- function() {

@@ -14,6 +14,7 @@ Imports:
     ggplot2,
     here,
     phonTools,
+    ranger,
     seewave,
     shiny,
     shinyjs,
