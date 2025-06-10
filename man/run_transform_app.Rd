@@ -2,10 +2,10 @@
 % Please edit documentation in R/run_transform_app.R
 \name{run_transform_app}
 \alias{run_transform_app}
-\title{Runs app to upload .wav file and transofrm into csv}
+\title{Runs app to upload .wav file and transform into csv}
 \usage{
 run_transform_app()
 }
 \description{
-Runs app to upload .wav file and transofrm into csv
+Runs app to upload .wav file and transform into csv
 }
