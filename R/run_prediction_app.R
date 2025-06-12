@@ -79,7 +79,7 @@ run_prediction_app <- function() {
       df$rf.pred.mel <- predict(rf_melfcc, new_data = df)$.pred_class
 
       if (input$method == "wide") {
-        wide_table <- to_selection_table(df, file_name, i = 350)
+        wide_table <- to_selection_table(df, file_name, w = 350)
         wide_table_reactive(wide_table)
         output$table_ui <- renderUI({
           tagList(
@@ -95,7 +95,7 @@ run_prediction_app <- function() {
         })
 
       } else if (input$method == "precise") {
-        precise_table <- to_selection_table(df, file_name, i = 50)
+        precise_table <- to_selection_table(df, file_name, w = 50)
         precise_table_reactive(precise_table)
         output$table_ui <- renderUI({
           tagList(
@@ -111,8 +111,8 @@ run_prediction_app <- function() {
         })
 
       } else {  # both
-        wide_table <- to_selection_table(df, file_name, i = 350)
-        precise_table <- to_selection_table(df, file_name, i = 50)
+        wide_table <- to_selection_table(df, file_name, w = 350)
+        precise_table <- to_selection_table(df, file_name, w = 50)
         precise_table_reactive(precise_table)
         wide_table_reactive(wide_table)
 
