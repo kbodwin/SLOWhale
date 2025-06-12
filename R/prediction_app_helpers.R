@@ -41,3 +41,19 @@ to_selection_table <- function(df, name, w){
 
     return(selection.table)
 }
+
+#' Summarize Selection Table
+#'
+#' @param selection_table A selection table created by to_selection_table()
+#' @return A one-row summary data.frame
+#' @export
+
+summarize_selection_table <- function(selection_table) {
+  selection_table |>
+    mutate(Duration = `End Time (s)` - `Begin Time (s)`) |>
+    summarise(
+      `Number of Selections` = n(),
+      `Total Duration (s)` = sum(Duration),
+      `Average Duration (s)` = mean(Duration)
+    )
+}
