@@ -2,6 +2,7 @@
 
 export(run_prediction_app)
 export(run_transform_app)
+export(summarize_selection_table)
 import(seewave)
 import(shiny)
 import(shinyjs)
